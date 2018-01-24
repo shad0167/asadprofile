@@ -1,0 +1,9 @@
+---student controller create kora---
+php artisan make:controller Students
+///////////////////////////////////
+---student model create kora---
+php artisan make:model Student
+//////////////////////////////////
+----student migration create kora--
+php artisan make:migration create_students_table
+////////////////////////////////
