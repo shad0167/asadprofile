@@ -116,9 +116,11 @@
                             <li><a class="page-scroll" href="#portfolio_area" title="Portfolio">Portfolio</a></li>
                             <li><a class="page-scroll" href="#experience_area" title="Experiences">Experiences</a></li>
                             <li><a class="page-scroll" href="#education_area" title="Education">Education</a></li>
-                            <li class="is-hidden-sm"><a class="page-scroll" href="#pricing_area" title="Pricing Tables">Pricing</a></li>
+                            <li class="is-hidden-sm">
+                                <a class="page-scroll" href="#pricing_area" title="Pricing Tables">Blog</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pages</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="portfolio.html" title="Portfolio">Portfolio</a></li>
                                     <li><a href="single_work.html" title="Single Portfolio">Single Work</a></li>
@@ -208,16 +210,14 @@
                                             <a href="https://twitter.com/AshadBaizid"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="social-icons__item">
-                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            <a href="https://www.linkedin.com/in/asad-zaman-003373158/"><i class="fa fa-linkedin"></i></a>
                                         </li>
-                                        <li class="social-icons__item">
-                                            <a href="https://plus.google.com/u/0/104012338049218904369"><i class="fa fa-google-plus"></i></a>
-                                        </li>
+
                                         <li class="social-icons__item">
                                             <a href="#"><i class="fa fa-pinterest"></i></a>
                                         </li>
                                         <li class="social-icons__item">
-                                            <a href="#"><i class="fa fa-behance"></i></a>
+                                            <a href="https://www.behance.net/ashad0167a70e"><i class="fa fa-behance"></i></a>
                                         </li>
                                         <li class="social-icons__item">
                                             <a href="#"><i class="fa fa-dribbble"></i></a>
@@ -228,6 +228,13 @@
                                         <li class="social-icons__item">
                                             <a href="#"><i class="fa fa-github " style="background-color: black"></i></a>
                                         </li>
+                                        <li class="social-icons__item">
+                                            <a href="https://plus.google.com/u/0/104012338049218904369"><i class="fa fa-google-plus" style="background-color: orangered"></i></a>
+                                        </li>
+                                        <li class="social-icons__item">
+                                            <a href="https://stackoverflow.com/users/7407903/asadzaman"><i class="fa fa-stack-overflow" style="background-color: goldenrod"></i></a>
+                                        </li>
+
                                     </ul>
                                     <br><br>
 <a href="{{ url('download/cv.pdf') }}" target="_blank" class="btn btn-lg btn-rounded mr-10 mb-15">Download CV</a>

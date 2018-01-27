@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('asadprofile.mainIndex');
 });
 
+Route::get('/blog', function () {
+    return view('asadprofile.blog');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -21,6 +25,80 @@ Route::get('/test', function () {
 Route::get('/atomic', function () {
     return view('welcome');
 });
+///////////////////////////////////////////////////////////
+///
+/*
+
+                            admin dash board
+
+
+*/
+
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
+
+
+///////////////////////////////////////////////////////////
+///
+/*
+
+                            Image vlog post
+
+
+*/
+
+
+Route::get('user/blog/imgblog/index',function (){
+
+
+    return view("asadprofile.blog.photoblog.imgblog");
+
+}
+);
+Route::get('user/blog/videoblog/index', 'Imgblog@index_user');
+
+Route::get('/blog/imgblog/index', 'Imgblog@index');
+
+Route::get('user/blog/imgblog/index', 'Imgblog@index_user');
+
+Route::get('/blog/imgblog/create',function (){
+
+
+    return view("admin.blog.imgblog.create");
+
+}
+);
+Route::post('/blog/imgblog/store', 'Imgblog@store');
+
+Route::get('/blog/imgblog/view/{id}', array("uses"=>'Imgblog@view') );
+
+Route::get('/blog/imgblog/edit/{id}', array("uses"=>'Imgblog@edit') );
+
+
+Route::post('/blog/imgblog/edit/update', 'Imgblog@update' );
+
+
+Route::get('/blog/imgblog/delete/{id}', array("uses"=>'Imgblog@delete') );
+
+
+Route::get('/blog/imgblog/search/{keyword}', array("uses"=>'Imgblog@search') );
+
+
+Route::post('/blog/videoblog/search_result', function(){
+    $path = '/blog/videoblog/'.$_POST['keyword'];
+    return redirect($path);
+});
+
+
+
+
+
+
+
+
+
+
 
 ///////////////////////////////////////////////////////////
 ///
